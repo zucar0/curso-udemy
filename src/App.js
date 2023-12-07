@@ -6,6 +6,9 @@ import React, { useState, useEffect } from 'react';
 function App() {
   const [count, setCount] = useState(0);
   const [valor, setValor] = useState(0);
+  const handlerNumber =()=>{
+    
+  }
   // De forma similar a componentDidMount y componentDidUpdate
   useEffect(() => {
     // Actualiza el título del documento usando la API del navegador
@@ -23,7 +26,7 @@ function App() {
       <Button setValor={setValor}/>
       <h2>{valor}</h2>
       <hr></hr> 
-
+      <button onClick={handlerNumber}>Botón 2</button>
     </div>
   );
 }
